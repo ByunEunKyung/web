@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content" content="text/html; charset=utf-8"/>
+		<title>더조은 펜션</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/joeun.js"></script>
+
+		
+	</head>
+	
+	<!-- 조건들
+	
+		1. 팝업창 : 
+			html //닫기 버튼, 로고(a) > 누르면 팝업창 재 생성
+			Css // width:450px; height:520px; border; shadow; align:center; top:20%;
+			js // 처음부터 보이도록
+		
+		2. 메뉴 (nav)
+			html // div로 nav 영역 만들기, ul li로 메뉴 만들기, mouseover/out 등등
+			Css // 메뉴 배경 색상, float, display 등등
+			js // mouseover/out 등 하이라이트 효과 (부드럽게 나타나고 사라짐)
+	
+		3. slide 이미지
+			html // 이미지 및 텍스트 가져오기
+			Css // font 및 text 속성 디자인
+			js // 사이트 열었을 때 자동으로 시작, 반복적으로 움직임(무한), FadeIn/FadeOut, 매 3초마다 이미지 전환
+	
+	-->
+	
+	<body>
+	
+		<div id="wrapper">
+			<div id="popup">
+				<li><img src="images/pop.jpg"></li>
+				<button class="close">닫기</button>
+				
+			</div> <!--팝업창 끝-->
+			
+				<div id="header">
+					<h1><a href="#"><img src="images/logo_C.png"></a></h1>
+					
+						<ul id="login"> <!-- 로그인 -->
+							<li><a href="#">홈 &nbsp; &nbsp;</a></li>
+							<li><a href="#"> 로그인 &nbsp; &nbsp;</a></li>
+							<li><a href="#"> 회원가입</a></li>
+						</ul>
+					
+					<div id="slideOne"> 
+						<li><a href="#"><img src="images/m_s_0_1.jpg" alt="메인 슬라이드4 이미지"></a></li>
+						<li><a href="#"><img src="images/m_s_1.jpg" alt="메인 슬라이드1 이미지"></a></li>
+						<li><a href="#"><img src="images/m_s_2.jpg" alt="메인 슬라이드2 이미지"></a></li>
+						<li><a href="#"><img src="images/m_s_3.jpg" alt="메인 슬라이드3 이미지"></a></li>
+
+					</div>
+					
+					<ul id="nav"> <!--메뉴(nav) 시작-->
+					
+						<li id="main1"><a href="#">홈</a>
+							<ul id="sub">
+								<li><a href="#">펜션 소개</a></li>
+								<li><a href="#">일정 안내</a></li>
+								<li><a href="#">오시는 길</a></li>
+							</ul>
+						</li>
+						
+						<li id="main2"><a href="#">시설</a>
+							<ul id="sub">
+								<li><a href="#">All Room</a></li>
+								<li><a href="#">외부시설</a></li>
+								<li><a href="#">기타시설</a></li>
+							</ul>
+						</li> 
+									
+						
+						<li id="main3"><a href="#">예약</a>
+							<ul id="sub">
+								<li><a href="#">빠른 예약</a></li>
+								<li><a href="#">픽업 서비스</a></li>
+								<li><a href="#">멤버쉽 가입</a></li>
+							</ul>
+						</li>
+						
+						<li id="main4"><a href="#">프로모션</a>
+							<ul id="sub">
+								<li><a href="#">이번달 이벤트</a></li>
+								<li><a href="#">여행 패키지 할인</a></li>
+								<li><a href="#">더조은 카페</a></li>
+							</ul>
+						</li>
+						
+						<li id="main5"><a href="#">후기</a>
+							<ul id="sub">
+								<li><a href="#">전체 후기</a></li>
+								<li><a href="#">인스타그램 후기</a></li>
+								<li><a href="#">페이스북 후기</a></li>
+							</ul>
+						</li>
+						
+					</ul><!-- 메뉴(nav) 끝-->
+					
+				
+
+				</div><!--헤더 끝-->
+			
+				<div id="container">
+					
+					<ul id="icon1">	
+						<li><a href="#"><img src="icon/i_call.png" alt="아이콘1"></a></li>		 <!-- 전화-->
+						<li><a href="#"><img src="icon/i_airbnb_2.png" alt="아이콘2"></a></li>		 <!-- 에어비앤비-->
+						<li><a href="#"><img src="icon/i_pin.png" alt="아이콘3"></a></li>		 <!-- 맵-->
+						<li><a href="#"><img src="icon/i_car.png" alt="아이콘4"></a></li>		 <!-- 주차 발권-->
+						<li><a href="#"><img src="icon/i_food.png" alt="아이콘5"></a></li>		 <!-- 카페-->
+					</ul>
+				
+					
+					<div id="sectionTitle">
+						
+							<!-- 펜션 소개글 -->
+							<p class="text1">아름다운 바다 앞에 바로 위치한 더조은 펜션입니다.<br>
+							넓은 창문으로 바다를 감상 할 수 있는 오션뷰를 누릴 수 있으며<br>
+							바다 근처 공용 주차장이 가까워 숙박 기간내 무료로 이용할 수 있습니다.<br>
+							바베큐 비용을 추가하면 16시 이후부터 22시까지 사용이 가능하며<br>
+							숙박 기간내 수영장은 모두 이용이 가능합니다. <br>
+							바다를 담은 실내 디자인과 바다의 청량감을 담아낸 침구들, 깨끗하고 심플한 최신식 욕실까지 정성스럽게 마련해드립니다. </p>
+					
+					<div id="bb">
+						<li id="more1"><a href="#">more</a></li>
+					</div>
+						
+						<div id="stMove1">
+							<div id="stImg1"> <!--내부-->
+								<li><img src="images/s2_in_2.jpg" alt="2번 슬라이드1 이미지"></li><!--room-->
+								<li><img src="images/s2_in_3.jpg" alt="2번 슬라이드1-1 이미지"></li>
+								<li><img src="images/bathroom2.jpg" alt="2번 슬라이드1-2 이미지"></li>
+								
+							</div>
+						</div>
+		
+					
+						<div id="stMove2">					
+							<div id="stImg2"> <!--외관-->
+								<li><img src="images/s2_out_2.jpg" alt="2번 슬라이드2 이미지"></li>	<!--수영장-->
+								<li><img src="images/s2_out_3.jpg" alt="2번 슬라이드2-1 이미지"></li>
+								<li><img src="images/s2_out_4.jpg" alt="2번 슬라이드2-2 이미지"></li>
+								
+							</div>
+						</div>
+							
+						
+						<!-- 예약 바로가기 버튼-->
+						<div>
+							<div id="check1">
+								<li><a href="#"><img src="images/check.png" alt="예약 바로가기"></a></li>
+							</div>
+						
+						<!-- 동영상 -->
+						<div id="move1">
+							<figure class="vid1">
+								<video autoplay muted loop poster="Palms - 19610.jpg" id="videoBg">
+									<source src="video/Palms - 19610.mp4" type="video/mp4">
+								</video>
+							</figure>
+		
+							<figure class="vid2">
+								<video autoplay muted loop poster="Vacation - 415.jpg" id="videoBg">
+									<source src="video/Vacation - 415.mp4" type="video/mp4">
+								</video>
+							</figure>
+							
+								<figure class="vid3">
+								<video autoplay muted loop poster="Woman - 33602.jpg" id="videoBg">
+									<source src="video/Woman - 33602.mp4" type="video/mp4">
+								</video>
+							</figure>
+							
+						</div>
+
+							
+					</div>
+					
+					
+				</div> <!-- 컨테이너 끝-->
+
+				
+				<div id="footer">
+					
+					<hr width="fixed" color="#9fe5e3">
+					<li id="logoBW"><img src="images/logo_BW.png"></li>
+					<address>
+					주식회사 더조은 펜션<br>
+					대표자 : 변은경 | 주소 : 경기도 안산시 상록구 사동 이화3길20 더조은 펜션<br>
+					Tel. 010-5453-6827 | E-mail : bokk713@gmail.com<br>
+					사업자등록번호 : 123-456-789 | 통신판매신고번호 : 2020-경기안산-0713 | 운영등록번호 : 제 950713호<br>
+					
+					</address>
+				
+				</div> <!-- 푸터 끝 -->
+				
+		</div><!-- wrapper 끝-->
+	
+	</body>
+</html>
+	

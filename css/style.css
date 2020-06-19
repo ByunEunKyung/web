@@ -1,0 +1,117 @@
+﻿@charset="utf-8";
+
+* { margin:0; padding:0; }
+li { list-style-type:none; }
+img { border:0; vertical-align:middle; }
+a { text-decoration:none; color:#000; }
+
+/* 자주 쓰는 속성: color:#2dcbc5; */
+
+/* 폰트 나중에 바꿔주기 */
+	
+	#wrapper {}
+	
+/* 팝업창 */	
+	#popup { position:absolute; width:450px; height:520px; border:2px solid #9fe5e3; box-shadow:2px 2px 3px #9a9a9a; left:200px; top:100px; z-index:1000; display:none; }
+	.close { position:absolute; top:480px; left:400px; background-color:#fff; border:0; color:#999; }
+			
+/* 헤더 영역 */
+	#header { position:relative; width:fixed; height:900px; /* outline:1px solid green; */ }
+
+/* 로고 */	
+		#header h1 img { position:absolute; width:100px; margin-top:30px; padding:0px; left:960px; }
+		#header h2 { position:absolute; color:#2dcbc5; top:400px; left:1000px; }
+			#header h2 a { color:#2dcbc5; }
+/* 로그인 */
+		#login { position:relative; left:1700px; font-size:12px; padding-top:20px; }
+			#login li { float:left; display:inline-block; }
+		
+/* 헤더 이미지 -  시안 변경 부분!! */
+	#slideOne { width:7680px; height:600px; }
+	#slideOne li { position:absolute; width:fixed; top:180px; }
+	#slide li img { position:absolute; }
+	
+	
+/* 메뉴 */
+			#nav { position:absolute; width:950px; height:60px; /* outline:1px solid red; */ margin-top:100px;
+			top:100px; right:20px; left:550px; }
+				
+				#main { top:200px; }
+				#nav li { /*outline:1px solid blue; */ }
+				
+				#nav>li { background-color:#fff; border-bottom:2px solid #2dcbc5; font-size:18px; text-align:center; /* outline:1px solid skyblue; */ width:180px; height:60px; line-height:60px;
+					top:0px; left:0; display:inline-block; }
+			
+					#nav>li>a { color:#2dcbc5; }
+					#nav>li a:hover { font-size:20px; text-align:center; }
+			
+				/* sub 메뉴 */
+				
+				#sub { display:none; font-size:12px; }
+				#sub>li { background-color:rgba(0,0,0,0.2); font-size:13px; display:block; position:relative; width:180px; height:50px; top:0px; }
+				#sub li a { color:#fff; }
+				#sub li a:hover { font-size:15px; text-align:center; color:#fff; }
+				
+
+/* 컨테이너 영역 */
+	#container { position:relative; width:fixed; /*outline:1px solid lightgreen;*/ }
+
+/* 아이콘 */		
+		#icon1 { width:700px; height:100px; position:relative; display:inline-block; }
+		#icon1 li { position:absolute; opacity:0.5; left:500px; top:0; }
+		#icon1 li:nth-child(1) { left:600px; }
+		#icon1 li:nth-child(2) { left:750px; }
+		#icon1 li:nth-child(3) { left:900px; }
+		#icon1 li:nth-child(4) { left:1050px; }
+		#icon1 li:nth-child(5) { left:1200px; }
+			#icon1 a:hover { opacity:0.3; }
+		
+			/* 소개 텍스트 */
+			p.text1 { position:absolute; font-size:14px; color:#333; text-align:left; font-family:맑은 고딕; line-height:40px; margin-bottom:50px; top:300px; margin-left:80px; }
+			
+		/* 더보기 more 버튼 */
+		#bb { position:absolute; width:150px; height:50px; top:600px; left:80px; background-color:#9fe5e3; font-size:18px; text-align:center; line-height:45px; font-weight:bold; }
+		#bb more1 { border:0; }
+
+	#sectionTitle { position:relative; width:1920px; height:900px; /* outline:1px solid red; */ }
+		/* 첫 번째 줄 */ /* 사진을 2개로 하고 외관. 내관으로 나눈뒤 클릭시 이미지 변경 */
+		#stMove1 { position:relative; width:400px; height:400px; margin-top:20px; top:300px; left:980px; overflow:hidden; /* outline:3px solid skyblue; */ border-bottom:20px solid #2dcbc5; }
+			#stImg1 { position:absolute; width:1200px; }
+			#stImg1 li { float:left; }
+		
+		/* 두 번째 줄 */ 
+		#stMove2 { position:relative; width:400px; height:400px; top:-180px; left:1400px; overflow:hidden; /* outline:3px solid skyblue; */ border-bottom:20px solid #2dcbc5;}
+			#stImg2 { position:absolute; width:1200px; }
+			#stImg2 li { float:left; }	
+
+			#stImg img { position:absolute; display:inline-block; }
+			#h2 stName { font-size:22px; color:#fff; font-weight:bold; }
+			p { font-size:16px; color:#000; }
+			
+			/*추가부분*/
+			
+			
+			#check1 { width:1920px; height:300px; /*outline:1px solid black; */ }
+				#check1 li img { width:1920px; height:300px; position:absolute; }
+				 #check1 li a:hover { width:1920px; height:300px; position:absolute; left:0; top:0; background-image:url("images/check_over.png") no-repeat; }
+			
+			
+			#move1 { position:relative; width:fixed; height:600px; /* outline:1px solid black; */}
+				.vid1 { position:absolute; left:180px; top:200px; padding:0; margin-top:20px; }
+					.vid1 video { width:30%; min-width:500px; }
+			
+				.vid2 { position:absolute; left:680px; top:200px; padding:0; margin-top:20px; }
+					.vid2 video { width:30%; min-width:500px; }
+					
+				.vid3 { position:absolute; left:1180px; top:200px; padding:0; margin-top:20px; }
+					.vid3 video { width:30%; min-width:500px; }
+			
+			
+	
+/* 푸터 영역 */
+	#footer { position:relative; width:fixed; height:150px; /* outline:1px solid pink; */ margin-top:20px; background-color:#fff; top:900px; }
+	
+		#logoBW { position:absolute; margin-top:20px; margin-left:80px; padding-bottom:30px; }
+		
+		address { float:left; font-size:12px; font-style:normal; margin-top:40px; padding-bottom:30px; margin-left:400px; }
+		
